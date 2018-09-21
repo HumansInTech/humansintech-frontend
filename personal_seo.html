@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Personal Info Here</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="css/humans_in_tech.css" rel="stylesheet">
+	<link href="css/humans_in_tech_custom.css" rel="stylesheet">
+</head>
+
+
+<body>
+	<nav class="top_nav">
+		<section class="nav_container">
+			<div class="brand">
+				<a href="landing.html">Humans in tech</a>
+			</div>
+			<div class="menu text-right">
+				<ul>
+					<li class="menu_item"><a href="discover.html">Discover Humans <i class="fas fa-users ml-1"></i></a></li>
+
+					<li class="menu_item">
+						<a href="#" class="dropdown-toggle" id="topNavDropdown">Menu </a>
+							<div class="droppingDownMenu" style="display: none;">
+								<a href="#"class="active" >
+									Edit information <i class="fas fa-pencil-alt ml-1"></i>
+								</a>
+								<a href="#">Profile <i class="fas fa-user ml-1"></i></a>
+								<a href="#">Messages <i class="fas fa-comment ml-1"></i></a>
+								<a href="#">Consultations <i class="fas fa-dollar-sign ml-1"></i></a>
+								<a href="#">Contributions <i class="fas fa-project-diagram ml-1"></i></a>
+								<a href="#">Group tags <i class="fas fa-hashtag ml-1"></i></a>
+								<a href="#">Stats <i class="fas fa-chart-line ml-1"></i></a>
+								<a href="#">Settings <i class="fas fa-cog ml-1"></i></a>
+								<a href="#">Signout <i class="fas fa-sign-out-alt ml-1"></i></a>
+							</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</nav>
+
+
+
+
+	<section class="container">
+		<div class="edit_list">
+
+			<form action="">
+					<label class="form_labels">Search Engine Optimization - SEO</label>
+					<span class="bread_crumb mb-5">
+						<a href="edit.html">Edit profile</a> Seach engine optimization
+					</span>
+			</form>
+
+					<div class="row">
+						<div class="col-12">
+							<span class="s_results">
+								<div class="seo_title"><a href="#">Gordon Turibamwe . Design . Software . ...</a></div>
+								<div class="seo_url">www.humans-in.tech/@gordonturibamwe/</div>
+								<div class="seo_description">Gordon Turibamwe is passionate about solving problems and connecting people using Graphic design and Computer Programming skills. Gordon Turibamwe</div>
+							</span>
+								<div class="seo_keywords"><span class="text-muted font-weight-bold">Keywords:</span> Graphic designer Boston, Software Developer, Ux Developer Boston</div>
+
+						</div>
+					</div>
+
+				<form>
+					<fieldset class="form-group">
+						<label class="input_label" for="exampleInputPassword1">About page Title</label>
+						<input type="text" class="form-control mb-2" id="exampleInputPassword1" placeholder="Profession" value="Gordon Turibamwe . Design . Software">
+						<small class="text-muted">Software Engineer, Graphic Designer, Data Scientist</small>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<label for="" class="input_label">Description</label>
+						<textarea class="form-control mb-2" id="exampleTextarea" rows="6" placeholder="About me">Gordon Turibamwe is passionate about solving problems and connecting people using Graphic design and Computer Programming skills. Gordon Turibamwe</textarea>
+						<small class="text-muted">Your introduction and about</a>.</small>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<label for="" class="input_label">Keywords</label>
+						<textarea class="form-control mb-2" id="exampleTextarea" rows="6" placeholder="About me">Graphic designer Boston, Software Developer, Ux Developer Boston</textarea>
+						<small class="text-muted">Your skills, location, and expertise here <a href="#">magna aliqua</a>.</small>
+					</fieldset>
+					
+					<button type="submit" class="btn btn-primary btn-block btn-lg custom">Save about me <i class="fas fa-arrow-right ml-2"></i></button>
+				</form>
+
+
+
+		</div>
+	</section>
+
+
+
+
+	<!-- Bootstrap core JavaScript ================================================== -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script>
+		$("#topNavDropdown").click(function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			$(this).toggleClass('active');
+		  $(".droppingDownMenu").toggle();
+		});
+	</script>
+</body>
+</html>

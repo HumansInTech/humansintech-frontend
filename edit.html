@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Edit Here</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="css/humans_in_tech.css" rel="stylesheet">
+	<link href="css/humans_in_tech_custom.css" rel="stylesheet">
+</head>
+
+
+<body>
+	<nav class="top_nav">
+		<section class="nav_container">
+			<div class="brand">
+				<a href="landing.html">Humans in tech</a>
+			</div>
+			<div class="menu text-right">
+				<ul>
+					<li class="menu_item"><a href="discover.html">Discover Humans <i class="fas fa-users ml-1"></i></a></li>
+
+					<li class="menu_item">
+						<a href="#" class="dropdown-toggle" id="topNavDropdown">Menu </a>
+							<div class="droppingDownMenu" style="display: none;">
+								<a href="#"class="active" >
+									Edit information <i class="fas fa-pencil-alt ml-1"></i>
+								</a>
+								<a href="#">Profile <i class="fas fa-user ml-1"></i></a>
+								<a href="#">Messages <i class="fas fa-comment ml-1"></i></a>
+								<a href="#">Consultations <i class="fas fa-dollar-sign ml-1"></i></a>
+								<a href="#">Contributions <i class="fas fa-project-diagram ml-1"></i></a>
+								<a href="#">Group tags <i class="fas fa-hashtag ml-1"></i></a>
+								<a href="#">Stats <i class="fas fa-chart-line ml-1"></i></a>
+								<a href="#">Settings <i class="fas fa-cog ml-1"></i></a>
+								<a href="#">Signout <i class="fas fa-sign-out-alt ml-1"></i></a>
+							</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</nav>
+
+
+
+
+	<section class="container">
+		<div class="edit_list mt-6">
+					
+			<span class="bread_crumb">
+				<label class="form_labels">Edit profile</label>
+					<span class="bread_crumb mb-5">
+						<a href="profile.html">View profile</a>  Edit profile
+					</span>
+			</span>
+
+			<ul class="edit_list_ul mt-5">
+				<li>
+					<a href="personal_info.html">Personal information</a>
+					<p>Name, Profession, Location, Expertise Age</p>
+				</li>
+				<li>
+					<a href="personal_intro.html">Introduction</a>
+					<p>A brief intro why other humans should connect and work with you</p>
+				</li>
+				<li>
+					<a href="personal_aboutme.html">About me</a>
+					<p>Descriptive intro about you and what you do</p>
+				</li>
+				<li>
+					<a href="personal_aboutme.html">Social links</a>
+					<p>Descriptive intro about you and what you do</p>
+				</li>
+				<li>
+					<a href="personal_aboutme.html">Social links</a>
+					<p>Descriptive intro about you and what you do</p>
+				</li>
+<!-- 				<li>
+					<a href="personal_expertise.html">Expertise</a>
+					<p>Information about me, detailed information about me</p>
+				</li>
+ -->				<li>
+					<a href="personal_seo.html">Search optimization</a>
+					<p>Increase your search enginee optimization</p>
+				</li>
+<!-- 				<li>
+					<a href="personal_experience.html">Experience</a>
+					<p>Your past education and work experiences</p>
+				</li>
+ -->			</ul>
+		</div>
+	</section>
+
+
+
+
+	<!-- Bootstrap core JavaScript ================================================== -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script>
+		$("#topNavDropdown").click(function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			$(this).toggleClass('active');
+		  $(".droppingDownMenu").toggle();
+		});
+	</script>
+</body>
+</html>
