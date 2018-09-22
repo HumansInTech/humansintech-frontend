@@ -101,9 +101,9 @@
 						<p>Special focus on cross-cultural research and emerging demographics. Designed a User Experience Lifecycle approach to help better understand how non-US markets are using products in their everyday lives</p>
 					</span>
 					<span class="contribution_action">
-						<span><a href="#"><i class="fas fa-user-plus mr-1"></i> Request invite</a> </span>
-						<span><a href="#"><i class="far fa-bookmark mr-1"></i> Bookmark Project</a> </span>
-						<span><a href="#"><i class="fas fa-exclamation mr-1"></i> Report / Claim</a>	</span>
+						<span><a href="#" data-toggle="modal" data-target="#requestInvite"><i class="fas fa-user-plus mr-1"></i> Request invite</a> </span>
+						<span><a href="#" data-toggle="modal" data-target="#bookmarkProject"><i class="far fa-bookmark mr-1"></i> Bookmark Project</a> </span>
+						<span><a href="#" data-toggle="modal" data-target="#reportClaim"><i class="fas fa-exclamation mr-1"></i> Report / Claim</a>	</span>
 					</span>
 				</li>
 			</ul>
@@ -247,6 +247,64 @@
 			</span>
 		</div>
 	</section>
+
+
+    <!-- Request invite -->
+		<div class="modal fade" id="requestInvite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+		        <p class="m-0">
+		        	Request Invite
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+    <!-- Bookmark projects -->
+		<div class="modal fade" id="bookmarkProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+		        <p class="m-0">
+		        	bookmarkProject
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+    <!-- Report claim projects -->
+		<div class="modal fade" id="reportClaim" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+		        <p class="m-0">
+		        	<form action="personal_intro.html" class="mt-0">
+								<fieldset class="form-group">
+									<label class="input_label" for="exampleInputPassword1">Profession <span class="ml-2 why" data-toggle="modal" data-target="#profession"><i class="fas fa-question-circle"></i><span></label>
+									<input type="text" class="form-control mb-2" id="exampleInputPassword1" placeholder="Profession">
+								</fieldset>
+								<fieldset class="form-group">
+									<label class="input_label" for="exampleInputPassword1">Expertise <span class="ml-2 why" data-toggle="modal" data-target="#expertise"><i class="fas fa-question-circle"></i><span></label>
+									<input type="text" class="form-control mb-2" id="exampleInputPassword1" placeholder="Expertise">
+								</fieldset>
+								<fieldset class="form-group">
+									<label class="input_label" for="exampleInputPassword1">Location <a href="#" class="ml-2 why"><i class="fas fa-question-circle"></i></a></label>
+									<input type="text" class="form-control mb-2" id="exampleInputPassword1" placeholder="City State Country">
+								</fieldset>
+								
+								<button type="submit" class="button">Report <i class="fas fa-arrow-right ml-2"></i></button>
+							</form>
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
 
