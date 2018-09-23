@@ -61,7 +61,7 @@
 					
 					
 					<ul class="social">
-						<li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#editSocial"><i class="fab fa-facebook fa-2x"></i></a></li>
 						<li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
 						<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
 						<li><a href="#"><i class="fab fa-bitbucket fa-2x"></i></a></li>
@@ -73,11 +73,30 @@
 					</fieldset>
 					
 					
-					<button type="submit" class="btn btn-primary btn-block btn-lg custom">Add social url <i class="fas fa-plus-square ml-2"></i></button>
+					<button type="submit" class="button">Add social url </button>
 				</form>
 
 		</div>
 	</section>
+
+    <!-- edit Social -->
+		<div class="modal fade" id="editSocial" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+		        <label class="form_labels mb-4">Edit social url</label>
+						<fieldset class="form-group">
+							<label class="input_label" for="exampleInputPassword1">Edit facebook url</label>
+							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Add social url here - https://facebook.com/gordonturibamwe" value="https://facebook.com/gordonturibamwe">
+						</fieldset>
+						<button type="submit" class="button">Update url </button>
+						<hr class="half">
+						<button type="submit" class="btn btn-danger btn-block btn-sm font-weight-bold">Remove url </button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
 

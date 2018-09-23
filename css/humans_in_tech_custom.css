@@ -865,7 +865,7 @@ span.img_p {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    border-radius: 0px;
+    border-radius: 4px;
     cursor: pointer;
     margin-bottom: 30px;
     flex-direction: row;
@@ -997,6 +997,7 @@ ul.error_messages li {
     margin-bottom: 10px;
     font-size: 13px;
     background: #dd3141;
+    border-radius: 3px;
 }
 span.notification {
     display: block;
@@ -1005,11 +1006,31 @@ span.notification {
     font-weight: bold;
     color: #fff;
     background: #001825;
-    margin-top: -5px;
     width: 100%;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    position: absolute;
+    border-radius: 4px;
+    margin-top: 10px;
 }
-
-
+hr.half {
+    max-width: 100px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid rgba(157, 163, 166, 0.3);
+}
+span.notification span.in {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: block;
+}
+span.notification button.close {
+    right: 20px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    opacity: 1;
+}
 
 
 
