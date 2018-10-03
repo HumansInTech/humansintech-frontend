@@ -46,20 +46,20 @@
 		</section>
 	</nav>
 
-	<section class="notification_wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<span class="notification">
-						<span class="in">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-							<p>Signup has been successful</p>
-						</span>
-					</span>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="alert_wrapper alert">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <span class="notification">
+                        <span class="in">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                            <p>Signed up successfully</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -188,9 +188,7 @@
   // Showing image to replade
   var loadFile = function(event) {
     var output = document.getElementById('output');
-    // output.src = URL.createObjectURL(event.target.files[0]);
     $('.img_p').css('background-image', 'url(' + URL.createObjectURL(event.target.files[0]) + ')');
-    // document.getElementById('change_image_here').innerHTML = "Click to change Poster"
   };
 </script>
 </body>

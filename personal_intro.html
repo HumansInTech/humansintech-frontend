@@ -64,8 +64,8 @@
 
 
 					<fieldset class="form-group">
-						<label for="" class="input_label">Introduction  <span class="ml-2 why" data-toggle="modal" data-target="#profession"><i class="fas fa-question-circle"></i><span></label>
-						<textarea class="form-control mb-2" id="exampleTextarea" rows="5" placeholder="Introduction"></textarea>
+						<label for="" class="input_label">Introduction  <span class="char_rem">~ minimum <span class="min_char">60</span> characters remaining</span> <span class="ml-2 why" data-toggle="modal" data-target="#profession"><i class="fas fa-question-circle"></i><span></label>
+						<textarea class="form-control mb-2" id="anotherINput" rows="5" placeholder="Introduction"></textarea>
 					</fieldset>
 					
 					<button type="submit" class="btn btn-primary btn-block btn-lg custom">Save introduction <i class="fas fa-arrow-right ml-2"></i></button>
@@ -107,6 +107,18 @@
 			event.stopPropagation();
 			$(this).toggleClass('active');
 		  $(".droppingDownMenu").toggle();
+		});
+	</script>
+
+	<script>
+		$("#anotherINput").on('keyup', function() {
+		  console.log($(this).val().length);
+		  $('.min_char').html(60 - $(this).val().length);
+		  if ((60 - $(this).val().length) <= 0) {
+		  	$('.char_rem').hide('slow');
+		  } else {
+		  	$('.char_rem').show('slow');
+		  }
 		});
 	</script>
 </body>
